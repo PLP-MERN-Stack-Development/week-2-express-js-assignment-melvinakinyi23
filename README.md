@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 🛍️ Products API – Node.js + Express
 
 This is a RESTful API for managing a list of products. Built using **Node.js** and **Express**, it includes authentication, validation, filtering, search, and pagination.
