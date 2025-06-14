@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 const express = require('express');
 const { use } = require('react');
 const app = express();
@@ -74,20 +74,9 @@ app.get('/', (req, res) => {
   res.send('Welcome to the Product API! Go to /api/products to see all products.');
 });
 
-// TODO: Implement the following routes:
-// GET /api/products - Get all products
-// GET /api/products/:id - Get a specific product
-// POST /api/products - Create a new product
-// PUT /api/products/:id - Update a product
-// DELETE /api/products/:id - Delete a product
-
-// Example route implementation for GET /api/products
->>>>>>> e2d9903f9d395cbe87cdec9a98a3f77b43dce832
 app.get('/api/products', (req, res) => {
   res.json(products);
 });
-
-<<<<<<< HEAD
 // GET a product by ID
 app.get('/api/products/:id', (req, res) => {
   const product = products.find(p => p.id === parseInt(req.params.id));
@@ -242,17 +231,9 @@ app.get('/api/products/stats', authenticate, (req, res) => {
     countByCategory: stats
   });
 });
-=======
-// TODO: Implement custom middleware for:
-// - Request logging
-// - Authentication
-// - Error handling
-
-// Start the server
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
 
 // Export the app for testing purposes
 module.exports = app; 
->>>>>>> e2d9903f9d395cbe87cdec9a98a3f77b43dce832
